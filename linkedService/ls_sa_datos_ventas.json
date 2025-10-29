@@ -1,0 +1,12 @@
+{
+	"name": "ls_sa_datos_ventas",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=saucbventasdelta7891086;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEI5MjNGM0Q5LUI0QUEtNEIxNi05MUM4LTc4RDhGQzY1RkJCRV9mNWQxOTc5Zi0zZWRmLTRlOTktYTllOS0xNWViMzVlMjYzYzYiDQp9"
+		}
+	}
+}
