@@ -1,0 +1,52 @@
+{
+	"name": "ds_sql_clientes",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_dw_ventas",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Bronze"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "cst_id",
+				"type": "varchar"
+			},
+			{
+				"name": "cst_key",
+				"type": "varchar"
+			},
+			{
+				"name": "cst_firstname",
+				"type": "nvarchar"
+			},
+			{
+				"name": "cst_lastname",
+				"type": "nvarchar"
+			},
+			{
+				"name": "cst_marital_status",
+				"type": "char"
+			},
+			{
+				"name": "cst_gndr",
+				"type": "char"
+			},
+			{
+				"name": "bdate",
+				"type": "varchar"
+			},
+			{
+				"name": "country",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "Bronze",
+			"table": "CLIENTES_RAW"
+		}
+	}
+}

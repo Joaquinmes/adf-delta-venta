@@ -1,0 +1,56 @@
+{
+	"name": "ds_sql_productos",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_dw_ventas",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Bronze"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "prd_id",
+				"type": "varchar"
+			},
+			{
+				"name": "prd_key",
+				"type": "varchar"
+			},
+			{
+				"name": "prd_nm",
+				"type": "nvarchar"
+			},
+			{
+				"name": "prd_cost",
+				"type": "varchar"
+			},
+			{
+				"name": "prd_line",
+				"type": "char"
+			},
+			{
+				"name": "ID_CAT",
+				"type": "varchar"
+			},
+			{
+				"name": "CAT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SUBCAT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MAINTENANCE",
+				"type": "char"
+			}
+		],
+		"typeProperties": {
+			"schema": "Bronze",
+			"table": "PRODUCTOS_RAW"
+		}
+	}
+}
